@@ -1,0 +1,76 @@
+<html class="second is-clipped">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Concerts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link rel="stylesheet" href="assests/css/styles.css">
+  <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+  <script type="text/javascript" src="https://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script defer src="assests\javascript\javascript.js"></script>
+</head>
+
+
+<body>
+  <section class="hero is-dark">
+    <div class="hero-head">
+      <header id="navbar" class="navbar is-transparent">
+        <div class="container">
+          <div class="navbar-brand">
+            <header class="navbar-item is-size-1 has-text-warning has-text-weight-semibold	">
+              GetDown
+            </header>
+            <a class="navbar-item has-text-white is-size-4 is-hidden-desktop" href="messageBoard-denver.html">
+              Live Chat
+            </a>
+          </div>
+          <div id="navbarMenuHeroC" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item has-text-white" href="index.html">
+                Search
+              </a>
+              <a class="navbar-item has-text-white" href="messageBoard-denver.html">
+                Live Chat
+              </a>
+              
+
+              <p class="navbar-item has-text-warning">
+                Concerts
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+  </section>
+
+
+  <div class="columns">
+    <div class="column">
+
+      <div class="columns scroll">
+        <div class="column is-four-quarters-mobile is-three-thirds-tablet is-two-thirds-desktop ok">
+          <div id="new-data"></div>
+        </div>
+        <div class="column ok is-hidden-touch">
+          <div id="buy"></div>
+        </div>
+      </div>
+    </div>
+    <div class="column this is-hidden-touch">
+      <div id="myMap"></div>
+    </div>
+  </div>
+
+
+
+
+
+</body>
+
+</html>

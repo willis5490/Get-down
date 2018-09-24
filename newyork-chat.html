@@ -1,0 +1,129 @@
+<html lang="en-us" class="second is-clipped">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Message Board</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <link rel="stylesheet" href="assests/css/styles.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- Firebase Reference -->
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+  <!-- Moment.js Reference -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script> -->
+
+<!--   <style>
+    #employee-table th,
+    td {
+      display: inline-block;
+      width: 16.575%;
+    }
+  </style> -->
+</head>
+
+<body>
+  <section class="hero">
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
+      <header class="navbar is-transparent">
+        <div class="container">
+          <div class="navbar-brand">
+            <header class="navbar-item is-size-1 has-text-warning has-text-weight-semibold	">
+              GetDown
+            </header>
+            <a class="navbar-item has-text-white is-size-4 is-hidden-desktop" href="index.html">
+              Search
+            </a>
+          </div>
+          <div id="navbarMenuHeroC" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item has-text-white" href="index.html">
+                Search
+              </a>
+              <a class="navbar-item has-text-warning" href="messageBoard-denver.html">
+                Live Chat
+              </a>
+              <a class="navbar-item has-text-white" href="Page-2-template.html">
+                Concerts
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+  </section>
+
+
+
+  <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
+    <ul class="">
+      <li>
+        <a class="has-text-white" href="messageBoard-denver.html">Denver</a>
+
+        <li>
+          <a class="has-text-white " href="LA-chat.html">Los Angeles</a>
+
+          <li>
+            <a class="has-text-info has-text-weight-bold" href="newyork-chat.html">New York</a>
+
+            <li>
+              <a class="has-text-white " href="miami-chat.html">Miami</a>
+
+  </nav>
+
+
+  <div class="columns is-mobile">
+    <div class="column is-three-fifths is-offset-one-fifth">
+      <h3 class="has-text-centered has-text-warning is-size-4">Chat live at shows!</h3>
+      <br>
+      <div class="field">
+        <label class="label has-text-white" for="employee-name-input ">Your Name</label>
+        <div class="control">
+          <input class="control" id="employee-name-input" placeholder="Name" type="text">
+        </div>
+      </div>
+
+
+
+      <div class="field">
+        <label class="label has-text-white">Message</label>
+        <div class="control">
+          <textarea id="role-input" class="textarea" placeholder="How you Doin ;)"></textarea>
+        </div>
+      </div>
+
+
+      <div class="field">
+        <div class="control">
+          <button class="button is-info" id="add-employee-btn">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="columns is-mobile ">
+    <div class="column is-three-fifths is-offset-one-fifth chatter ">
+
+
+      <table class="table is-fullwidth" id='employee-table'>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+  <!-- JavaScript -->
+  <script src="assests/javascript/newyork-live.js"></script>
+
+</body>
+
+</html>
